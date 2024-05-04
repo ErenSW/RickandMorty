@@ -1,0 +1,207 @@
+/* Arama çubuğu */
+.search-main {
+  margin-top: 20px; /* Arama çubuğunun üst boşluğu */
+  position: absolute; /* Mutlak konumlandırma */
+  top: 20px; /* Sayfanın üstünden 20 piksel aşağıda */
+  right: 20px; /* Sayfanın sağından 20 piksel içeride */
+  z-index: 1; /* Diğer öğelerin üstünde olacak */
+}
+
+.custom-button {
+  background-color: transparent; /* Arka plan rengi şeffaf */
+  border: none; /* Kenar çizgisi yok */
+  cursor: pointer; /* Fare imleci işaretçisi */
+  outline: none; /* Odaklandığında vurgu yok */
+  padding: 0; /* İç içe boşluk yok */
+}
+
+.search-container {
+  position: relative; /* Göreceli konumlandırma */
+}
+
+.search-input {
+  width: 300px; /* Genişlik 300 piksel */
+  padding: 10px 40px 10px 30px; /* Doldurma */
+  height: 100%; /* Yükseklik 100% */
+  border: 1px solid black; /* Kenarlık siyah */
+  border-radius: 30px; /* Kenar yarıçapı */
+  font-size: 16px; /* Yazı tipi boyutu */
+  outline: none; /* Odaklandığında vurgu yok */
+}
+
+.btn-search {
+  position: absolute; /* Mutlak konumlandırma */
+  top: 50%; /* Üstten %50 içeride */
+  left: 10px; /* Soldan 10 piksel içeride */
+  transform: translateY(-50%); /* Dikey olarak merkezleme */
+  color: rgb(130, 130, 130); /* Metin rengi */
+}
+/* /Arama çubuğu */
+
+/* Footer */
+.footer {
+  width: 100%; /* Genişlik 100% */
+  background-color: rgb(32, 35, 41); /* Arka plan rengi */
+  color: white; /* Metin rengi */
+  padding: 50px; /* Dolgu */
+  display: flex; /* Yatay düzende sıralama */
+  justify-content: center; /* Yatayda ortalamaya hizalama */
+  align-items: center; /* Dikeyde ortalamaya hizalama */
+  font-size: x-large; /* Yazı tipi boyutu */
+}
+
+.footer-special {
+  position: fixed; /* Sabit konumlandırma */
+  left: 0; /* Sol kenara yapışık */
+  bottom: 0; /* Alt kenara yapışık */
+  width: 100%; /* Genişlik 100% */
+  background-color: rgb(32, 35, 41); /* Arka plan rengi */
+  color: white; /* Metin rengi */
+  padding: 54px; /* Dolgu */
+  display: flex; /* Yatay düzende sıralama */
+  justify-content: center; /* Yatayda ortalamaya hizalama */
+  align-items: center; /* Dikeyde ortalamaya hizalama */
+  font-size: x-large; /* Yazı tipi boyutu */
+}
+/* /Footer */
+
+/* İçerik*/
+.content {
+  width: 100%; /* Genişlik 100% */
+  background-color: rgb(39, 43, 51); /* Arka plan rengi */
+  padding-top: 25px; /* Üstten dolgu */
+  padding-bottom: 60px; /* Alttan dolgu */
+  margin-top: 175px; /* Üstten boşluk */
+}
+
+.character-container {
+  display: grid; /* Izgara düzeni */
+  grid-template-columns: repeat(2, 1fr); /* 2 sütunlu izgara */
+  gap: 20px; /* Elemanlar arası boşluk */
+}
+
+.character-container {
+  padding-left: 80px; /* Sol dolgu */
+  padding-right: 80px; /* Sağ dolgu */
+}
+/*Karakter kartları*/
+.ch-box {
+  background-color: rgb(60, 62, 68); /* Kart arka plan rengi */
+  height: 265px; /* Kart yüksekliği */
+  width: 100%; /* Kart genişliği */
+  border-radius: 20px; /* Kenar yuvarlaklığı */
+  margin-top: 35px; /* Üstten boşluk */
+  position: relative; /* Göreceli konumlandırma */
+  overflow: hidden; /* Taşan içeriği gizle */
+  display: flex; /* Yatay düzende sıralama */
+  flex-direction: row; /* Yatay düzende sıralama */
+  align-items: flex-start; /* Dikeyde en üstte hizalama */
+}
+
+.specialCharacter{
+  display: flex; /* Yatay düzende sıralama */
+}
+
+.ch-Image img {
+  height: 100%; /* Resim yüksekliği */
+  width: 85%; /* Resim genişliği */
+  margin-right: 20px; /* Sağdan boşluk */
+}
+
+.ch-Content {
+  flex: 1; /* Esnek büyüme */
+  padding-top: 10px; /* Üstten dolgu */
+}
+
+.ch-Content a {
+  text-decoration: none; /* Metin altı çizgi yok */
+  color: white; /* Metin rengi */
+}
+.ch-Content a:hover {
+  color: orange; /* Metin rengi */
+}
+/*/Karakter kartları*/
+
+/* /İçerik*/
+
+/* Sayfalama */
+.pagination {
+  text-align: center; /* Metni ortalamaya hizalama */
+}
+
+.pagination a {
+  color: white; /* Metin rengi */
+  text-decoration: none; /* Metin altı çizgi yok */
+  text-align: center; /* Metni ortalamaya hizalama */
+  padding: 5px 10px; /* Doldurma */
+  display: inline-block; /* Satır içi blok */
+}
+.pagination a i {
+  color: black; /* Metin rengi */
+  background-color: white; /* Arka plan rengi */
+  padding: 8px 8px; /* Doldurma */
+}
+.pagination a.active {
+  color: red; /* Metin rengi */
+}
+/* /Sayfalama */
+
+/* İkonlar*/ 
+.ch-Icon-Alive,
+.ch-Icon-Dead,
+.ch-Icon-unknown {
+  border-radius: 50%; /* Kenar yuvarlaklığı */
+  width: 10px; /* Genişlik */
+  height: 10px; /* Yükseklik */
+  display: inline-block; /* Satır içi blok */
+  margin-right: 5px; /* Sağdan boşluk */
+}
+
+.ch-Icon-Alive {
+  background-color: green; /* Arka plan rengi */
+}
+.ch-Icon-Dead { 
+  background-color: red; /* Arka plan rengi */
+}
+.ch-Icon-unknown { 
+  background-color: gray; /* Arka plan rengi */
+}
+/* /İkonlar*/ 
+
+/* Durumlar*/ 
+.ch-Status {
+  font-size: x-large; /* Yazı tipi boyutu */
+  color: white; /* Metin rengi */
+}
+
+.ch-Status-special {
+  font-size: x-large; /* Yazı tipi boyutu */
+  color: black; /* Metin rengi */
+}
+/* /Durumlar*/ 
+
+/* Lokasyonlar*/ 
+.Lastknowlocation {
+  margin-top: 10px; /* Üstten boşluk */
+  font-size: x-large; /* Yazı tipi boyutu */
+  color: rgb(181, 181, 181); /* Metin rengi */
+}
+
+.Lastknowlocation-special {
+  margin-top: 10px; /* Üstten boşluk */
+  font-size: x-large; /* Yazı tipi boyutu */
+  color: rgb(181, 181, 181); /* Metin rengi */
+}
+
+.Firstseenin {
+  margin-top: 10px; /* Üstten boşluk */
+  font-size: x-large; /* Yazı tipi boyutu */
+  color: rgb(181, 181, 181); /* Metin rengi */
+}
+
+.Firstseenin-special {
+  margin-top: 10px; /* Üstten boşluk */
+  font-size: x-large; /* Yazı tipi boyutu */
+  color: rgb(181, 181, 181); /* Metin rengi */
+}
+/* /Lokasyonlar*/ 
